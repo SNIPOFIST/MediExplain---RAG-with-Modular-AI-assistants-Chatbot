@@ -14,10 +14,11 @@ import chromadb
 from chromadb.utils import embedding_functions
 
 # -------------------------------------------------
-# CONFIG
+# CONFIG (paths relative to this file)
 # -------------------------------------------------
-HTML_FOLDER = "html"                   # folder with PMCxxxx.html
-CHROMA_PATH = "./mediexplain_chromadb"
+_BASE = os.path.dirname(os.path.abspath(__file__))
+HTML_FOLDER = os.path.join(_BASE, "html")
+CHROMA_PATH = os.path.join(_BASE, "mediexplain_chromadb")
 COLLECTION_NAME = "MediExplainPMC"
 EMBED_MODEL = "text-embedding-3-small"
 CHAT_MODEL = "gpt-4.1-mini"            # or gpt-4.1-mini
