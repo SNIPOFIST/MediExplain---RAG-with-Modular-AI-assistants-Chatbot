@@ -111,16 +111,34 @@ Suggested filenames (optional):
 
 ## Tech stack
 
+<p align="left">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white" />
+  <img alt="OpenAI" src="https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white" />
+  <img alt="Google Generative AI" src="https://img.shields.io/badge/Google_Generative_AI-4285F4?style=flat&logo=google&logoColor=white" />
+  <img alt="ChromaDB" src="https://img.shields.io/badge/ChromaDB-FF6B35?style=flat&logo=chromadb&logoColor=white" />
+  <img alt="Hugging Face" src="https://img.shields.io/badge/sentence--transformers-FFD21E?style=flat&logo=huggingface&logoColor=black" />
+  <img alt="NumPy" src="https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white" />
+  <img alt="pandas" src="https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white" />
+  <img alt="Beautiful Soup" src="https://img.shields.io/badge/BeautifulSoup-599848?style=flat&logo=beautifulsoup&logoColor=white" />
+  <img alt="lxml" src="https://img.shields.io/badge/lxml-005571?style=flat&logo=xml&logoColor=white" />
+  <img alt="PyPDF" src="https://img.shields.io/badge/PyPDF-720E36?style=flat&logo=adobeacrobatreader&logoColor=white" />
+  <img alt="DuckDB" src="https://img.shields.io/badge/DuckDB-FFF000?style=flat&logo=duckdb&logoColor=black" />
+  <img alt="SQLite" src="https://img.shields.io/badge/pysqlite3_(SQLite)-003B57?style=flat&logo=sqlite&logoColor=white" />
+  <img alt="Dev Containers" src="https://img.shields.io/badge/Dev_Containers-2496ED?style=flat&logo=docker&logoColor=white" />
+  <img alt="GitHub Codespaces" src="https://img.shields.io/badge/GitHub_Codespaces-181717?style=flat&logo=github&logoColor=white" />
+</p>
+
 | Layer | Technology |
 |-------|------------|
 | UI | **Streamlit** (multi-page app) |
-| LLM / embeddings | **OpenAI** API (`openai`), configured models in code / config |
+| LLM / embeddings | **OpenAI** API (`openai`), configured models in code / config; optional **Google Generative AI** (`google-generativeai`) |
 | Vector store | **ChromaDB** + OpenAI embedding function |
 | NLP / ML utilities | **sentence-transformers**, **numpy**, **pandas** |
 | Parsing | **BeautifulSoup**, **lxml**, **pypdf** |
 | Optional DB | **DuckDB** |
-| SQLite (Chroma) | **pysqlite3-binary** (see chroma-related modules for the sqlite shim) |
-| Container | **VS Code Dev Container** / GitHub Codespaces (`.devcontainer/`) |
+| SQLite (Chroma) | **pysqlite3-binary** (sqlite shim for Chroma; see chroma-related modules) |
+| Container | **VS Code Dev Container** / **GitHub Codespaces** (`.devcontainer/`) |
 
 ---
 
